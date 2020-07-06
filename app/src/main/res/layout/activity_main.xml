@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/profile"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/UserApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Utilisateur de l'application"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/profile"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/Resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résumé"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/UserApp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/RDV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rendez-vous"
+        android:textSize="15sp"
+        android:layout_below="@id/Resume"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/Suivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivis"
+        android:textSize="15sp"
+        android:layout_below="@id/RDV"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/Notif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="15sp"
+        android:layout_below="@id/Suivi"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/Nbre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@id/Resume"
+        android:layout_marginLeft="313dp" />
+
+    <TextView
+        android:id="@+id/RDV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@id/RDV"
+        android:layout_marginLeft="375dp" />
+
+    <TextView
+        android:id="@+id/Suivi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@id/Suivi"
+        android:layout_marginLeft="375dp" />
+
+    <TextView
+        android:id="@+id/Notif7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@id/Notif"
+        android:layout_marginLeft="375dp" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Notif"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/RDV_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rendez-vous" />
+
+        <RadioButton
+            android:id="@+id/Urgence_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Urgence"/>
+
+         <RadioButton
+            android:id="@+id/Suivi_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suivi" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/brand"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:src="@drawable/brand"
+        android:layout_below="@id/Notif"
+        android:layout_marginLeft="150dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        android:layout_below="@id/brand"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annuler"
+        android:layout_below="@id/brand"
+        android:layout_marginLeft="148dp"/>
+
+</RelativeLayout>
